@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cyber-security-threat", "Assembly-CSharp.csproj", "{AF98E291-ABEB-8490-B9BA-1FE6A34AA565}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF98E291-ABEB-8490-B9BA-1FE6A34AA565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF98E291-ABEB-8490-B9BA-1FE6A34AA565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF98E291-ABEB-8490-B9BA-1FE6A34AA565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF98E291-ABEB-8490-B9BA-1FE6A34AA565}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
