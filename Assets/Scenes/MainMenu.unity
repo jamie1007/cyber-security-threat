@@ -307,7 +307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1522661356}
-        m_MethodName: openPageSim
+        m_MethodName: openPageSim1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1213,7 +1213,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sim1
+  m_Text: sim2
 --- !u!222 &1110102278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1296,8 +1296,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 150028095}
-        m_MethodName: onHideContent
+      - m_Target: {fileID: 1522661356}
+        m_MethodName: openPageSim3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1554,8 +1554,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 150028095}
-        m_MethodName: onHideContent
+      - m_Target: {fileID: 1522661356}
+        m_MethodName: openPageSim2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1610,7 +1610,7 @@ GameObject:
   - component: {fileID: 1522661357}
   - component: {fileID: 1522661356}
   m_Layer: 0
-  m_Name: linksim1
+  m_Name: linkingToSim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1781,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sim1
+  m_Text: sim3
 --- !u!222 &1980540628
 CanvasRenderer:
   m_ObjectHideFlags: 0
