@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\main menu\MainMenu_Controller.cs" />
      <Compile Include="Assets\Scripts\main menu\Menu_controler.cs" />
+     <Compile Include="Assets\Scripts\simulations\dataInput.cs" />
      <Compile Include="Assets\Scripts\simulations\linkingSceneSim.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
