@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\main menu\helpButton.cs" />
      <Compile Include="Assets\Scripts\simulations\dataInput.cs" />
      <Compile Include="Assets\Scripts\simulations\linkingSceneSim.cs" />
+     <Compile Include="Assets\Scripts\simulations\settingPopulation.cs" />
+     <Compile Include="Assets\Scripts\simulations\text.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
