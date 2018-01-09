@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts.simulations;
 
 public class dataInput : MonoBehaviour {
     public Text spreadTxt;
@@ -10,6 +11,7 @@ public class dataInput : MonoBehaviour {
     public GameObject activationTxt1;
     public GameObject activationTxt2;
     public GameObject activationTxt3;
+     
     public void allInputsAccepted()
     {
         if (!string.IsNullOrEmpty(spreadTxt.text) && !string.IsNullOrEmpty(cyberSecurytTxt.text) && !string.IsNullOrEmpty(populationTxt.text))

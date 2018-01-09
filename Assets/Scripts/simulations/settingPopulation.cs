@@ -8,13 +8,13 @@ public class settingPopulation : MonoBehaviour {
 
     public void setValuePopulation() 
     {
-        if (!string.IsNullOrEmpty(populationTxt.text))
+        if (!string.IsNullOrEmpty(populationTxt.text)) //this will set the field to nothing if any number is in there
         {
-            populationTxt.text = "";
+            populationTxt.text = ""; //sets the text to nothing so that a number can be entered
         }
         else
         {
-            populationTxt.text = "65.64";
+            populationTxt.text = "65.64"; //this will set the population to the uk population
         }
     }
 }
