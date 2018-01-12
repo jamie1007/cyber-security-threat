@@ -15,7 +15,8 @@ public class dataInput : MonoBehaviour {
     public void allInputsAccepted()
     {
         if (!string.IsNullOrEmpty(spreadTxt.text) && !string.IsNullOrEmpty(cyberSecurytTxt.text) && !string.IsNullOrEmpty(populationTxt.text)
-            && !(System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101))
+            && !(System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101) 
+            && !(System.Convert.ToInt32(cyberSecurytTxt.text) <= 0 || System.Convert.ToInt32(cyberSecurytTxt.text) >= 11))
         {
             print("test");
         }
@@ -60,6 +61,14 @@ public class dataInput : MonoBehaviour {
         else 
         {
             activationTxt1.SetActive(false);
+        }
+        if (System.Convert.ToInt32(cyberSecurytTxt.text) <= 0 || System.Convert.ToInt32(cyberSecurytTxt.text) >= 11)
+        {
+            activationTxt2.SetActive(true);
+        }
+        else
+        {
+            activationTxt2.SetActive(false);
         }
     }
 }
