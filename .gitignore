@@ -34,3 +34,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+Library/assetDatabase3
+Library/CurrentLayout.dwlt
