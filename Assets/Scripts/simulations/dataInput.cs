@@ -23,7 +23,6 @@ public class dataInput : MonoBehaviour {
     }
     public void redBox()
     {
-
         if (string.IsNullOrEmpty(spreadTxt.text)) // this is checking for if the string is empty or if it has content
         {
             activationTxt1.SetActive(true);
@@ -32,6 +31,7 @@ public class dataInput : MonoBehaviour {
         else
         {
             activationTxt1.SetActive(false);
+            
         }
 
         if (string.IsNullOrEmpty(cyberSecurytTxt.text))
