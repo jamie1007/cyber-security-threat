@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.simulations;
+using UnityEngine.SceneManagement;
 
 public class dataInput : MonoBehaviour {
     public Text spreadTxt;
@@ -11,14 +12,15 @@ public class dataInput : MonoBehaviour {
     public GameObject activationTxt1;
     public GameObject activationTxt2;
     public GameObject activationTxt3;
-     
+    public static int spread;
+
     public void allInputsAccepted()
     {
         if (!string.IsNullOrEmpty(spreadTxt.text) && !string.IsNullOrEmpty(cyberSecurytTxt.text) && !string.IsNullOrEmpty(populationTxt.text)
             && !(System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101) 
             && !(System.Convert.ToInt32(cyberSecurytTxt.text) <= 0 || System.Convert.ToInt32(cyberSecurytTxt.text) >= 11))
         {
-            print("test");
+            SceneManager.LoadScene("Sim1", LoadSceneMode.Single);
         }
     }
     public void redBox()
@@ -30,6 +32,7 @@ public class dataInput : MonoBehaviour {
 
         else
         {
+            
             activationTxt1.SetActive(false);
             
         }
