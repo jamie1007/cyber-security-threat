@@ -13,6 +13,8 @@ public class dataInput : MonoBehaviour {
     public GameObject activationTxt2;
     public GameObject activationTxt3;
     public static int spread;
+    public static int population;
+    public static int cyberSecurty;
 
     public void allInputsAccepted()
     {
@@ -32,19 +34,18 @@ public class dataInput : MonoBehaviour {
 
         else
         {
-            
+            spread = System.Convert.ToInt32(spreadTxt.text);
             activationTxt1.SetActive(false);
-            
         }
 
         if (string.IsNullOrEmpty(cyberSecurytTxt.text))
         {
-
             activationTxt2.SetActive(true);
         }
 
         else
         {
+            cyberSecurty = System.Convert.ToInt32(cyberSecurytTxt.text);
             activationTxt2.SetActive(false);
         }
 
@@ -55,6 +56,7 @@ public class dataInput : MonoBehaviour {
 
         else
         {
+            population = System.Convert.ToInt32(populationTxt.text);
             activationTxt3.SetActive(false);
         }
         if (System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101)
