@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class settingPopulation : MonoBehaviour {
+public class SettingPopulation : MonoBehaviour {
     public InputField populationTxt;
 
-    public void setValuePopulation() 
+    public void SetValuePopulation() 
     {
         if (!string.IsNullOrEmpty(populationTxt.text)) //this will set the field to nothing if any number is in there
         {

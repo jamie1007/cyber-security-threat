@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Assets.Scripts.simulations;
 using UnityEngine.SceneManagement;
 
-public class dataInput : MonoBehaviour {
+public class DataInput : MonoBehaviour {
     public Text spreadTxt;
     public Text cyberSecurytTxt;
     public Text populationTxt;
@@ -13,8 +13,11 @@ public class dataInput : MonoBehaviour {
     public GameObject activationTxt2;
     public GameObject activationTxt3;
     public static int spread;
+    public static int cyberSecurity;
+    public static int population;
 
-    public void allInputsAccepted()
+
+    public void AllInputsAccepted()
     {
         if (!string.IsNullOrEmpty(spreadTxt.text) && !string.IsNullOrEmpty(cyberSecurytTxt.text) && !string.IsNullOrEmpty(populationTxt.text)
             && !(System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101) 
@@ -23,7 +26,7 @@ public class dataInput : MonoBehaviour {
             SceneManager.LoadScene("Sim1", LoadSceneMode.Single);
         }
     }
-    public void redBox()
+    public void RedBox()
     {
         if (string.IsNullOrEmpty(spreadTxt.text)) // this is checking for if the string is empty or if it has content
         {
@@ -32,8 +35,8 @@ public class dataInput : MonoBehaviour {
 
         else
         {
-            
             activationTxt1.SetActive(false);
+            spread = System.Convert.ToInt32(spreadTxt.text);
             
         }
 
@@ -46,6 +49,7 @@ public class dataInput : MonoBehaviour {
         else
         {
             activationTxt2.SetActive(false);
+            cyberSecurity = System.Convert.ToInt32(cyberSecurytTxt.text);
         }
 
         if (string.IsNullOrEmpty(populationTxt.text))
@@ -56,6 +60,7 @@ public class dataInput : MonoBehaviour {
         else
         {
             activationTxt3.SetActive(false);
+            population = System.Convert.ToInt32(populationTxt.text);
         }
         if (System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101)
         {
