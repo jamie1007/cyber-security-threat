@@ -23,6 +23,7 @@ public class DataInput : MonoBehaviour {
             && !(System.Convert.ToInt32(spreadTxt.text) <= 0 || System.Convert.ToInt32(spreadTxt.text) >= 101) 
             && !(System.Convert.ToInt32(cyberSecurytTxt.text) <= 0 || System.Convert.ToInt32(cyberSecurytTxt.text) >= 11))
         {
+            print("ok");
             SceneManager.LoadScene("Sim1", LoadSceneMode.Single);
         }
     }

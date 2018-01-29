@@ -185,7 +185,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1847250423}
-        m_MethodName: allInputsAccepted
+        m_MethodName: RedBox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1847250423}
-        m_MethodName: redBox
+        m_MethodName: AllInputsAccepted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 386642836}
-        m_MethodName: setValuePopulation
+        m_MethodName: SetValuePopulation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

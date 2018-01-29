@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpreadCalc : MonoBehaviour {
+    public Text InfectPercent;
+    public static int InfectedP;
     public static int Infected = 1; //this is the starting number for infected
     public static int NewInfected; // this will keep track of how many computers 
     public static float cyberPrevent; // this is the number of computers that are stopped by cyber security
+    
 
     public void SpreadCal()
     {
@@ -13,17 +17,25 @@ public class SpreadCalc : MonoBehaviour {
         
         print("new infected " + NewInfected);
         Infected = Infected + NewInfected;
-        print("a");
+        
     }
     public void CyberRemove()
     {
         cyberPrevent = (int)(NewInfected * (float)DataInput.cyberSecurity/10); //this takes a percentage of the cyber security level and states how many computers don't get infected
         Mathf.Round(cyberPrevent);
         print("cyber prevented "+cyberPrevent);
+        print("infected"+Infected);
         Infected = Infected - (int)cyberPrevent;
         print("final infected" + Infected);
-        print("b");
+        
     }
+    public void Asignment()
+    {
+        InfectedP = Infected /((int)DataInput.population*1000000);
+        
+
+    }
+
 
 
 }
