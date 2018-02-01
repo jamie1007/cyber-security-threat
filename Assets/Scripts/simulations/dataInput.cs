@@ -12,9 +12,9 @@ public class DataInput : MonoBehaviour {
     public GameObject activationTxt1;
     public GameObject activationTxt2;
     public GameObject activationTxt3;
-    public static int spread;
+    public static float spread;
     public static int cyberSecurity;
-    public static int population;
+    public static float population;
 
 
     public void AllInputsAccepted()

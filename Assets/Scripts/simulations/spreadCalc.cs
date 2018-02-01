@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SpreadCalc : MonoBehaviour {
     public Text InfectPercent;
-    public static int InfectedP;
+    public static ulong InfectedP;
     public static int Infected = 1; //this is the starting number for infected
     public static int NewInfected; // this will keep track of how many computers 
     public static float cyberPrevent; // this is the number of computers that are stopped by cyber security
@@ -31,9 +31,9 @@ public class SpreadCalc : MonoBehaviour {
     }
     public void Asignment()
     {
-        InfectedP = Infected /((int)DataInput.population*1000000);
+        InfectedP = (ulong)((Infected / (DataInput.population*1000000)*100U));//(1)
+        print("percent infefected"+InfectedP);//(2)
         
-
     }
 
 
