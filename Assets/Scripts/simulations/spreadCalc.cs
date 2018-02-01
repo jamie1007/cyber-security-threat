@@ -33,7 +33,8 @@ public class SpreadCalc : MonoBehaviour {
     {
         InfectedP = (ulong)((Infected / (DataInput.population*1000000)*100U));//(1)
         print("percent infefected"+InfectedP);//(2)
-        
+        InfectPercent.text = System.Convert.ToString(InfectedP);
+
     }
 
 
