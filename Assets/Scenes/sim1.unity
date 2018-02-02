@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 1069766087}
   - component: {fileID: 1069766086}
   m_Layer: 5
-  m_Name: infectedNumber
+  m_Name: CyberNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,7 +714,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d12ddc5b8d7b834fb5c5c19ac888954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InfectPercent: {fileID: 0}
+  InfectPercentOut: {fileID: 40632771}
+  InfectedOut: {fileID: 1545357237}
+  notInfectedPercentOut: {fileID: 1216243207}
+  notInfectedOut: {fileID: 1832284948}
+  cyberSecurityPercentOut: {fileID: 1919229776}
+  cyberSecurityOut: {fileID: 1069766086}
 --- !u!4 &1150131295
 Transform:
   m_ObjectHideFlags: 0
@@ -951,7 +956,7 @@ GameObject:
   - component: {fileID: 1216243208}
   - component: {fileID: 1216243207}
   m_Layer: 5
-  m_Name: infectedPercent
+  m_Name: NotInfectedPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1264,7 +1269,7 @@ GameObject:
   - component: {fileID: 1832284949}
   - component: {fileID: 1832284948}
   m_Layer: 5
-  m_Name: infectedNumber
+  m_Name: NotInfectedNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1460,7 +1465,7 @@ GameObject:
   - component: {fileID: 1919229777}
   - component: {fileID: 1919229776}
   m_Layer: 5
-  m_Name: infectedPercent
+  m_Name: CyberPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

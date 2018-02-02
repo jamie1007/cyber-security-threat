@@ -4,8 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SpreadCalc : MonoBehaviour {
-    public Text InfectPercent;
+    public Text InfectPercentOut; //done
+    public Text InfectedOut; //done
+    public Text notInfectedPercentOut;  
+    public Text notInfectedOut;
+    public Text cyberSecurityPercentOut;
+    public Text cyberSecurityOut;
     public static ulong InfectedP;
+    public static ulong notInfected;
+    public static ulong notInfectedPercent;
+    public static ulong CyberPercent;
     public static int Infected = 1; //this is the starting number for infected
     public static int NewInfected; // this will keep track of how many computers 
     public static float cyberPrevent; // this is the number of computers that are stopped by cyber security
@@ -32,8 +40,26 @@ public class SpreadCalc : MonoBehaviour {
     public void Asignment()
     {
         InfectedP = (ulong)((Infected / (DataInput.population*1000000)*100U));//(1)
-        print("percent infefected"+InfectedP);//(2)
-        InfectPercent.text = System.Convert.ToString(InfectedP);
+        InfectPercentOut.text = System.Convert.ToString(InfectedP)+"%";
+        //above is for infected percent
+
+        InfectedOut.text = System.Convert.ToString(Infected);
+        //above is the for infected
+
+        notInfected = (ulong)(DataInput.population * 1000000 - Infected);
+        notInfectedOut.text = System.Convert.ToString(notInfected);
+        // above is not infected
+
+        notInfectedPercent = (ulong)(100 -InfectedP);
+        notInfectedPercentOut.text = System.Convert.ToString(notInfectedPercent)+"%";
+        //above is not infected percent
+
+        cyberSecurityOut.text = System.Convert.ToString(cyberPrevent);
+        //above is the cyber security
+
+        CyberPercent = (ulong)((cyberPrevent / Infected)*100U);
+        cyberSecurityOut.text = System.Convert.ToString(CyberPercent)+"%";
+        //this is cyber percentage 
 
     }
 
