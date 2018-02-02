@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class SpreadCalculator : MonoBehaviour {
 
+    public static int CardiffPopulation;
+    public static int NorwichPopulation;
+    public static int LondonPopulation;
+    public static int EdinburgPopulation;
+
+
     // Use this for initialization
     void Start() {
 
@@ -15,7 +21,7 @@ public class SpreadCalculator : MonoBehaviour {
     }
     public void DefinePopulation()
     {
-        
+
     }
     public void Spreader()
     {
