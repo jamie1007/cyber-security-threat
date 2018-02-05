@@ -21,7 +21,7 @@ public class SpreadCalculator : MonoBehaviour {
     }
     public void DefinePopulation()
     {
-
+        
     }
     public void Spreader()
     {
