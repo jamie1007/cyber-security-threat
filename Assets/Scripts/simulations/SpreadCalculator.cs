@@ -4,12 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SpreadCalculator : MonoBehaviour {
-    /*public Text InfectedP;
-    public Text InfectedNumber;
-    public Text NotInfectedP;
-    public Text NotInfectedNumber;
-    public Text CyberProtectedP;
-    public Text CyberProtectedNumber;*/
     public Text[] Stats = new Text[14];
     public int InfectedTotal;
     public int NotInfected;
@@ -38,7 +32,6 @@ public class SpreadCalculator : MonoBehaviour {
         Population[1] = (int)(System.Convert.ToInt32(DataInput.population * 10000) * 15); //Norwich
         Population[2] = (int)(System.Convert.ToInt32(DataInput.population * 10000) * 50);//London
         Population[3] = (int)(System.Convert.ToInt32(DataInput.population * 10000) * 30); //Edingburgh
-
     }
     public void Spreader()
     {

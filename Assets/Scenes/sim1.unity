@@ -1167,32 +1167,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150131293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb656ff75b968cf46814197953135581, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f45d7e14092c7146a3d23c7b77b0c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Stats:
-  - {fileID: 1545357237}
-  - {fileID: 40632771}
-  - {fileID: 1832284948}
-  - {fileID: 1216243207}
-  - {fileID: 1069766086}
-  - {fileID: 1919229776}
-  - {fileID: 716531007}
-  - {fileID: 241547089}
-  - {fileID: 1621662601}
-  - {fileID: 428978493}
-  - {fileID: 1773276769}
-  - {fileID: 758871926}
-  - {fileID: 2071207623}
-  - {fileID: 2088082077}
-  InfectedTotal: 0
-  NotInfected: 0
-  CyberTotal: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Percent: 00000000000000000000000000000000000000000000000000000000
-  Population: 000000000000000000000000
-  Infected: 000000000000000000000000
-  NewInfected: 000000000000000000000000
-  CyberSecurity: 000000000000000000000000
+  Population: 00000000000000000000000000000000
+  Infected: 00000000000000000000000000000000000000000000000000000000
+  NewInfected: 00000000000000000000000000000000
+  CyberSecurity: 00000000000000000000000000000000
 --- !u!4 &1150131295
 Transform:
   m_ObjectHideFlags: 0
