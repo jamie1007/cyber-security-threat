@@ -11,17 +11,18 @@ public class Controler : MonoBehaviour {
     private int[] NewInfected = new int[4];
     private int[] CyberSecurity = new int[4];
     private int[] populationRatio = { 5, 15, 50, 30};
+
     // Use this for initialization
     void Start () {
-        DefinePopulation();
-        Infected[0] = 1;
+        /*DefinePopulation();
+        Infected[0] = 1;*/
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
-    public void DefinePopulation()
+    /*public void DefinePopulation()
     {
         for (int i = 0; i < 4; i++)
         {
@@ -49,8 +50,15 @@ public class Controler : MonoBehaviour {
             else
             {
                 NewInfected[i] = (int)Mathf.Pow(Infected[i], DataInput.spread);
+                Infected[i] = System.Convert.ToInt32(Infected[i]) + NewInfected;
             }
         }
+        for (int i = 0; i < Infected.Length; i++ )
+        {
+            Infected[6] += Infected[i];
+
+        }
+        
     }
     public void CyberRemove()
     {
@@ -59,12 +67,29 @@ public class Controler : MonoBehaviour {
             CyberSecurity[i] = (int)(NewInfected[i] * (float)DataInput.cyberSecurity / 10);
             Mathf.Round(CyberSecurity[i]);//this rounds the number
         }
+        for (int i = 0; i<CyberSecurity.Length; i++)
+        {
+            totals[1] += CyberSecurity[i];
+        }
+
     }
     public void Assignment()
     {
+        totals[2] = System.Convert.ToInt32(DataInput.population) - totals[0];
+
         for (int i = 0; i < 3; i++)
         {
-            Stats[i] = 
+            Stats[i].text = System.Convert.ToString(totals[i]);
         }
-    }
+        for (int i=3; i<7; i++)
+        {
+            Stats[i].text = System.Convert.ToString(Infected[i - 3]);
+        }
+        
+        for (int i=10; i<13; i++)
+        {
+            Stats[i].text = System.Convert.ToString(Infected[i - 10]);
+        }
+
+    }*/
 }

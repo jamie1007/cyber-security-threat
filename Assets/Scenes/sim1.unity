@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 74823010}
   - component: {fileID: 74823009}
   m_Layer: 5
-  m_Name: cardiff
+  m_Name: Edinburgh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'cardiff
+  m_Text: 'Edinburgh
 
     infected'
 --- !u!222 &74823010
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 241547090}
   - component: {fileID: 241547089}
   m_Layer: 5
-  m_Name: LondonPercent
+  m_Name: CardiffPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 428978494}
   - component: {fileID: 428978493}
   m_Layer: 5
-  m_Name: EdinburghPercent
+  m_Name: NorwichPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 451532756}
   - component: {fileID: 451532755}
   m_Layer: 5
-  m_Name: london
+  m_Name: cardiff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,7 +616,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'london
+  m_Text: 'Cardiff
 
     infected'
 --- !u!222 &451532756
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 716531008}
   - component: {fileID: 716531007}
   m_Layer: 5
-  m_Name: LondonNumber
+  m_Name: CardiffNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 758871927}
   - component: {fileID: 758871926}
   m_Layer: 5
-  m_Name: NorwichPercent
+  m_Name: LondonPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: infected
+  m_Text: total infected
 --- !u!222 &966332874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1167,29 +1167,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150131293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f45d7e14092c7146a3d23c7b77b0c99, type: 3}
+  m_Script: {fileID: 11500000, guid: 64f0799c2bae30646adc59f40e3d3914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stats:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Percent: 00000000000000000000000000000000000000000000000000000000
-  Population: 00000000000000000000000000000000
-  Infected: 00000000000000000000000000000000000000000000000000000000
-  NewInfected: 00000000000000000000000000000000
-  CyberSecurity: 00000000000000000000000000000000
+  stats:
+  - {fileID: 1545357237}
+  - {fileID: 1832284948}
+  - {fileID: 1069766086}
+  - {fileID: 716531007}
+  - {fileID: 1621662601}
+  - {fileID: 1773276769}
+  - {fileID: 2071207623}
+  - {fileID: 40632771}
+  - {fileID: 1216243207}
+  - {fileID: 1919229776}
+  - {fileID: 241547089}
+  - {fileID: 428978493}
+  - {fileID: 758871926}
+  - {fileID: 2088082077}
+  time: 0
+  speed: 100
 --- !u!4 &1150131295
 Transform:
   m_ObjectHideFlags: 0
@@ -1875,7 +1872,7 @@ GameObject:
   - component: {fileID: 1621662602}
   - component: {fileID: 1621662601}
   m_Layer: 5
-  m_Name: edinburghNumber
+  m_Name: NorwichNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1949,7 +1946,7 @@ GameObject:
   - component: {fileID: 1694765668}
   - component: {fileID: 1694765667}
   m_Layer: 5
-  m_Name: norwich
+  m_Name: London
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1996,7 +1993,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2007,7 +2004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'norwich
+  m_Text: 'London
 
     infected'
 --- !u!222 &1694765668
@@ -2027,7 +2024,7 @@ GameObject:
   - component: {fileID: 1773276770}
   - component: {fileID: 1773276769}
   m_Layer: 5
-  m_Name: NorwichNumber
+  m_Name: LondonNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2243,7 +2240,7 @@ GameObject:
   - component: {fileID: 1869079981}
   - component: {fileID: 1869079980}
   m_Layer: 5
-  m_Name: edinburg
+  m_Name: Norwich
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2290,7 +2287,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2301,7 +2298,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'edinburg
+  m_Text: 'Norwich
 
     infected'
 --- !u!222 &1869079981
@@ -2541,7 +2538,7 @@ RectTransform:
   m_Father: {fileID: 1104149442}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7, y: 0.45}
+  m_AnchorMin: {x: 0.7, y: 0.3}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -2604,7 +2601,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2615,7 +2612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: security
+  m_Text: cyber prevent
 --- !u!222 &2029437951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2633,7 +2630,7 @@ GameObject:
   - component: {fileID: 2071207624}
   - component: {fileID: 2071207623}
   m_Layer: 5
-  m_Name: cardiffNumber
+  m_Name: EdinburghNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2775,7 +2772,7 @@ GameObject:
   - component: {fileID: 2088082078}
   - component: {fileID: 2088082077}
   m_Layer: 5
-  m_Name: CardiffPercent
+  m_Name: EdinburghPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
