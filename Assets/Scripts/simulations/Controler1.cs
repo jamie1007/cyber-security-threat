@@ -96,14 +96,14 @@ public class Controler1 : MonoBehaviour {
             print("infected stages2 " + i + " " + Infected[i + 3]);
             Infected[0] += Infected[i + 3];
         }
-        Infected[1] = System.Convert.ToInt32(DataInput.population) - Infected[0];
+        Infected[1] = System.Convert.ToInt32(DataInput.population*1000000) - Infected[0];
         for (int i = 0; i<7; i++)
         {
             stats[i].text = System.Convert.ToString(Infected[i]);
         }
         print(Infected[0]);
-        Percent[0] = (System.Convert.ToInt32(DataInput.population) / Infected[0])*100;
-        Percent[1] = (Infected[1] / Infected[0])*100;
+        Percent[0] = (Infected[0]/ System.Convert.ToInt32(DataInput.population*1000000))*100;
+        Percent[1] = (Infected[0] / Infected[1] )*100;
         Percent[2] = (Infected[2] / NewInfected[4])*100;
         for (int i = 0; i < 4; i++)
         {
