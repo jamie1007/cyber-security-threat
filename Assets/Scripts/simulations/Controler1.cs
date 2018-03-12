@@ -23,7 +23,13 @@ public class Controler1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (time == speed) //this is slowing the game down so that it doesn't finish instantly
+        Spreader();
+        CyberRemove();
+
+
+
+
+        if (time == speed) //this is slowing the game down so that it doesn't finish instantly
         {
             Spreader();
             CyberRemove();
@@ -39,7 +45,7 @@ public class Controler1 : MonoBehaviour {
     {
         for (int i = 0; i < 4; i++)
         {
-            Population[i] = (int)(System.Convert.ToInt32(DataInput.population * 10000) * populationRatio[i]);
+            Population[i] = (int)(System.Convert.ToInt32(DataInput.population * 1000000) * populationRatio[i]);
         }
     }
     public void Spreader()
@@ -57,9 +63,9 @@ public class Controler1 : MonoBehaviour {
         }
         for (int i = 0; i < 4; i++)
         {
-            if (Infected[i + 3] >= Population[i])
+            if (Infected[i + 3] >= (Population[i]*1000000))
             {
-                Infected[i + 3] = Population[i];
+                Infected[i + 3] = (Population[i]*1000000);
             }
             else
             {
@@ -107,7 +113,7 @@ public class Controler1 : MonoBehaviour {
         Percent[2] = (Infected[2] / NewInfected[4])*100;
         for (int i = 0; i < 4; i++)
         {
-            Percent[i + 3] = (Infected[i + 3] / Population[i])*100;
+            Percent[i + 3] = (Infected[i + 3] / (Population[i]*1000000))*100;
         }
         for(int i = 0; i < 7; i++)
         {
