@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\main menu\MainMenu_Controller.cs" />
      <Compile Include="Assets\Scripts\main menu\Menu_controler.cs" />
      <Compile Include="Assets\Scripts\main menu\helpButton.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\simulations\Controler.cs" />
      <Compile Include="Assets\Scripts\simulations\Controler1.cs" />
      <Compile Include="Assets\Scripts\simulations\SettingPopulation.cs" />
@@ -57,6 +58,14 @@
      <Compile Include="Assets\Scripts\simulations\dataInput.cs" />
      <Compile Include="Assets\Scripts\simulations\linkingSceneSim.cs" />
      <Compile Include="Assets\spreadcalc.cs" />
+=======
+     <Compile Include="Assets\Scripts\simulations\dataInput.cs" />
+     <Compile Include="Assets\Scripts\simulations\linkingSceneSim.cs" />
+     <Compile Include="Assets\Scripts\simulations\settingPopulation.cs" />
+     <Compile Include="Assets\Scripts\simulations\spreadCalc.cs" />
+     <Compile Include="Assets\Scripts\simulations\text.cs" />
+     <Compile Include="Assets\Scripts\simulations\tryparse.cs" />
+>>>>>>> parent of 2366741... finished v1
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

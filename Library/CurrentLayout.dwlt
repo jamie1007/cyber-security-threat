@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 829
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -107,14 +107,18 @@ MonoBehaviour:
     y: 30
     width: 1368
     height: 779
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 707, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 11
 =======
   controlID: 111
 >>>>>>> parent of ee9460b... Grammar correction
+=======
+  controlID: 23
+>>>>>>> parent of 2366741... finished v1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +142,11 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 12
+=======
+  controlID: 24
+>>>>>>> parent of 2366741... finished v1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,8 +219,8 @@ MonoBehaviour:
     y: 0
     width: 306
     height: 779
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -236,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 485
     height: 779
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -458,19 +466,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts/simulations
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Scripts/simulations
+=======
+    - Assets/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Scenes
+>>>>>>> parent of 2366741... finished v1
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\rolyf\OneDrive\Documents\school\github\cyber-security-threat
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 30250000
     m_LastClickedID: 9520
     m_ExpandedIDs: 00000000ca240000fe2400001a250000be26000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: f8250000
+    m_LastClickedID: 9720
+    m_ExpandedIDs: 00000000ce250000022600001c260000d027000000ca9a3bffffff7f
+>>>>>>> parent of 2366741... finished v1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +520,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 80250000
     m_LastClickedID: 9600
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ca2400001a250000be260000
+=======
+    m_ExpandedIDs: 00000000ce250000022600001c260000d0270000
+>>>>>>> parent of 2366741... finished v1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -530,12 +556,17 @@ MonoBehaviour:
     m_RenameOverlay:
       m_UserAcceptedRename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_Name: SimDataInput1
       m_OriginalName: SimDataInput1
 =======
       m_Name: helpButton
       m_OriginalName: helpButton
 >>>>>>> parent of ee9460b... Grammar correction
+=======
+      m_Name: 
+      m_OriginalName: 
+>>>>>>> parent of 2366741... finished v1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -543,13 +574,17 @@ MonoBehaviour:
         width: 0
         height: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_UserData: 9490
 =======
       m_UserData: 1360
 >>>>>>> parent of ee9460b... Grammar correction
+=======
+      m_UserData: 0
+>>>>>>> parent of 2366741... finished v1
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -670,6 +705,7 @@ MonoBehaviour:
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 10e2ffff
     m_LastClickedID: -7664
     m_ExpandedIDs: 0ee9ffff3cecffffc8efffffcaf1ffffe6fbffff00000000102a0000b02a0000c42b0000
@@ -678,6 +714,11 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: e4fbffff00000000
 >>>>>>> parent of ee9460b... Grammar correction
+=======
+    m_SelectedIDs: 00260000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 26faffffa2fbffff00000000
+>>>>>>> parent of 2366741... finished v1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: linkMain
