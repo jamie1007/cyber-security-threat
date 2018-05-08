@@ -17,8 +17,8 @@ public class Controler1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        DefinePopulation();
-        Infected[3] = 1;
+        DefinePopulation(); 
+        Infected[3] = 1; //this is to define the first infected computer
 	}
 	
 	// Update is called once per frame
@@ -31,27 +31,27 @@ public class Controler1 : MonoBehaviour {
 
         if (time == speed) //this is slowing the game down so that it doesn't finish instantly
         {
-            Spreader();
-            CyberRemove();
+            Spreader(); // this is calling the spreader function
+            CyberRemove(); //thhis is calling the cyberRemove function
             Assignment();
             time = 0;
         }
         else
         {
-            time++;
+            time++;//this increments the time
         }
 	}
     public void DefinePopulation()
     {
         for (int i = 0; i < 4; i++)
         {
-            Population[i] = (int)(System.Convert.ToInt32(DataInput.population * 1000000) * populationRatio[i]);
+            Population[i] = (int)(System.Convert.ToInt32(DataInput.population * 1000000) * populationRatio[i]);//this is defining the population at the start of the game
         }
     }
     public void Spreader()
     {
-        Infected[0] = 0;
-        NewInfected[4] = 0;
+        Infected[0] = 0; 
+        NewInfected[4] = 0;//setting total newly infected to zero
         if (Infected[3] >= Population[0] * 0.9 && Infected[4] == 0 && Infected[5] == 0) //checking to see if cardiff is 90% infected
         {
             Infected[4] = 1; //setting infected
@@ -63,14 +63,14 @@ public class Controler1 : MonoBehaviour {
         }
         for (int i = 0; i < 4; i++)
         {
-            if (Infected[i + 3] >= (Population[i]*1000000))
+            if (Infected[i + 3] >= (Population[i]*1000000))//+3 because the first 3 are other statistics
             {
-                Infected[i + 3] = (Population[i]*1000000);
+                Infected[i + 3] = (Population[i]*1000000);//+3 because the first 3 are other statistics
             }
             else
             {
                 NewInfected[i] = (int)Mathf.Pow(Infected[i + 3], DataInput.spread);
-                Infected[i + 3] = Infected[i + 3] + NewInfected[i];
+                Infected[i + 3] = Infected[i + 3] + NewInfected[i];//this is adding the newly infected to the overall infected
             }
         }
         for (int i = 0; i < 4; i++)
@@ -84,14 +84,14 @@ public class Controler1 : MonoBehaviour {
     {
         for (int i = 0; i < 4; i++)
         {
-            CyberSecurity[i] = (int)(NewInfected[i] * (float)DataInput.cyberSecurity / 10);
+            CyberSecurity[i] = (int)(NewInfected[i] * (float)DataInput.cyberSecurity / 10);//this is calculating the amount of computers that are not infected
             Mathf.Round(CyberSecurity[i]);//this rounds the number
-            Infected[i + 3] = Infected[i + 3] - CyberSecurity[i];
+            Infected[i + 3] = Infected[i + 3] - CyberSecurity[i];//this is taking the cyberSecurity from the total infected from each region
             print("infected stages1 " + i + " " + Infected[i + 3]);
         }
         for (int i = 0; i < CyberSecurity.Length; i++)
         {
-            Infected[2] += CyberSecurity[i];
+            Infected[2] += CyberSecurity[i]; //this is adding up the total cyber prevented
         }
 
     }
@@ -105,7 +105,7 @@ public class Controler1 : MonoBehaviour {
         Infected[1] = System.Convert.ToInt32(DataInput.population*1000000) - Infected[0];
         for (int i = 0; i<7; i++)
         {
-            stats[i].text = System.Convert.ToString(Infected[i]);
+            stats[i].text = System.Convert.ToString(Infected[i]);//this is applying the relevent values to the stats table
         }
         print(Infected[0]);
         Percent[0] = (Infected[0]/ System.Convert.ToInt32(DataInput.population*1000000))*100;
@@ -113,11 +113,11 @@ public class Controler1 : MonoBehaviour {
         Percent[2] = (Infected[2] / NewInfected[4])*100;
         for (int i = 0; i < 4; i++)
         {
-            Percent[i + 3] = (Infected[i + 3] / (Population[i]*1000000))*100;
+            Percent[i + 3] = (Infected[i + 3] / (Population[i]*1000000))*100;//this is making percentages of all of the main cities
         }
         for(int i = 0; i < 7; i++)
         {
-            stats[i + 7].text = System.Convert.ToString(Percent[i]);
+            stats[i + 7].text = System.Convert.ToString(Percent[i]);//this is adding all the statistics values 
         }
     }
 }

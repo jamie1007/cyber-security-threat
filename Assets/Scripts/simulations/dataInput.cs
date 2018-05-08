@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts.simulations;
+//using Assets.Scripts.simulations;
 using UnityEngine.SceneManagement;
 
 public class DataInput : MonoBehaviour {

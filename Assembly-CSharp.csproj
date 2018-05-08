@@ -51,14 +51,11 @@
      <Compile Include="Assets\Scripts\main menu\helpButton.cs" />
      <Compile Include="Assets\Scripts\simulations\Controler.cs" />
      <Compile Include="Assets\Scripts\simulations\Controler1.cs" />
-     <Compile Include="Assets\Scripts\simulations\DataInput.cs" />
      <Compile Include="Assets\Scripts\simulations\SettingPopulation.cs" />
      <Compile Include="Assets\Scripts\simulations\SpreadCalc.cs" />
      <Compile Include="Assets\Scripts\simulations\SpreadCalculator.cs" />
+     <Compile Include="Assets\Scripts\simulations\dataInput.cs" />
      <Compile Include="Assets\Scripts\simulations\linkingSceneSim.cs" />
-     <Compile Include="Assets\Scripts\simulations\test.cs" />
-     <Compile Include="Assets\Scripts\simulations\text.cs" />
-     <Compile Include="Assets\Scripts\simulations\tryparse.cs" />
      <Compile Include="Assets\spreadcalc.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
